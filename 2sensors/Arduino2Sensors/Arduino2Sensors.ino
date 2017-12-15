@@ -1,5 +1,5 @@
 #include <Bounce2.h>
-const int potiPin = 7;
+const int potiPin = A0;
 const int buttonPin = 4;
 
 int serialValue = A0;
@@ -12,6 +12,7 @@ Bounce debouncer = Bounce();
 void setup() {
   pinMode(potiPin, INPUT);
   //pinMode(buttonPin, INPUT);
+  
   //Bouncer----------
   pinMode(buttonPin,INPUT_PULLUP);
   // After setting up the button, setup the Bounce instance :
