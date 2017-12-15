@@ -1,12 +1,11 @@
 import processing.serial.*;
-
-// Serial myPort;
+ Serial myPort;
 int serialValue = 100;
 
 void setup() {
   size(1000, 500);
   printArray(myPort.list());
-  String portName = myPort.list()[1];
+  String portName = myPort.list()[3];
   myPort =new Serial(this, portName, 9600);
 }
 
