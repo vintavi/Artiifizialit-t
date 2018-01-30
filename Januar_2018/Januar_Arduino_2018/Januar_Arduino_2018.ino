@@ -5,7 +5,7 @@
  */
 
 #include "pitches.h"
-
+//speaker should be conected with pin 8
 const int potiPin = A0;
 const int buttonPin = 4;
 const int potiPin2 = A1;
